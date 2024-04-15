@@ -1,4 +1,6 @@
 ---
+import Header from "~/components/Header.astro";
+
 type Props = {
   title?: string;
 };
@@ -16,7 +18,8 @@ const { title = "th gallery" } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="min-h-svh">
+    <Header />
     <slot />
   </body>
 </html>

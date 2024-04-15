@@ -1,5 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Test } from "~/components/text";
 ---
 
-<BaseLayout> TH Gallery </BaseLayout>
+<BaseLayout>
+  <Test client:load />
+</BaseLayout>
